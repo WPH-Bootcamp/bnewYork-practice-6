@@ -1,0 +1,44 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+.btn-primary {
+  @apply bg-blue-500 text-white px-4 py-1 rounded-lg shadow hover:bg-blue-600;
+}
+
+/* DIRECTIVE @apply : yang memungkin kita menggunakan tailwind di file .css eksternal */
+.btn-secondary {
+  @apply bg-gray-500 text-white px-4 py-1 rounded-lg shadow hover:bg-gray-600;
+}
+
+/* CSS BIASA */
+.btn-danger {
+  background-color: red;
+  width: 100px;
+}
+
+/* THEME CUSTOMIZATION */
+@theme {
+  --color-primary: #4f46e5;
+  --color-secondary: #10b981;
+  --font-arial: "Arial", sans-serif;
+  --spacing-section: 72px;
+  --color-putih: white;
+}
+
+/* CARD COMPONENT */
+.card-container {
+  @apply bg-white p-6 rounded-xl shadow max-w-sm;
+}
+
+.card-title {
+  @apply text-xl font-bold;
+}
+
+.card-desc {
+  @apply text-gray-500 mt-2;
+}
+
+.card-btn {
+  @apply mt-4 bg-primary text-white px-4 py-2 rounded hover:bg-blue-700 transition;
+}

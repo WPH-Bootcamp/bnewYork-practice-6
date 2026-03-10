@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Materi 1 - Pseudo-class</title>
+    <link rel="stylesheet" href="../css/output.css" />
+  </head>
+  <body>
+    <h1 class="underline">MATERI 1 - PSEUDO CLASS</h1>
+
+    <!-- 1. HOVER STATE -->
+    <h2>1. HOVER STATE</h2>
+    <button
+      class="bg-blue-500 text-white border-2 border-black px-6 rounded-full hover:bg-blue-900"
+    >
+      Hover Me
+    </button>
+
+    <!-- 2. FOCUS STATE -->
+    <h2>2. FOCUS STATE</h2>
+    <input
+      type="text"
+      class="border border-black focus:outline-none focus:ring-2 focus:ring-red-500"
+    />
+
+    <!-- 3. ACTIVE STATE -->
+    <h2>3. ACTIVE STATE</h2>
+    <button
+      class="bg-blue-500 text-white border-2 border-black px-6 rounded-full hover:bg-blue-900 active:bg-red-400"
+    >
+      Hover Me
+    </button>
+
+    <!-- 4. DISABLED STATE -->
+    <h2>4. DISABLED STATE</h2>
+    <button
+      class="bg-gray-500 text-white border-2 border-gray-900 px-6 rounded-full disabled:opacity-50"
+      disabled
+    >
+      Hover Me
+    </button>
+
+    <!-- 5. FIRST AND LAST STATE -->
+    <h2>5. FIRST AND LAST STATE</h2>
+    <ul class="bg-black p-4 rounded flex flex-col gap-2">
+      <li class="py-2 first:pt-0 last:pb-0 bg-white">Item 1</li>
+      <li class="py-2 bg-white">Item 1</li>
+      <li class="py-2 bg-white last:pb-0">Item 1</li>
+    </ul>
+  </body>
+</html>
